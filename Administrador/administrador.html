@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de LOG IN</title>
+    <link href="/Administrador/css/estilos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!--<para agregar el cabecero de nuestra pagina-->
+        <h1>Administrador, ingreso de nuevos productos</h1>
+    </header>
+
+    <nav>
+        <a href="#">HOMEPAGE</a>
+        <a href="#">CARRITO DE COMPRAS</a>
+        <a href="#">LISTA DE DESEOS</a>
+        <a href="#">ADMINISTRADOR</a>
+        <a href="#">SUPER ADMINISTRADOR</a>
+        <a href="#">BUSCAR</a>
+    </nav>
+
+    <div class="contenedor"> 
+        <h2>REGISTRO NUEVO PRODUTO</h2>
+        <form id="forma" name="forma" method="post">
+        <!--Cada campo lo vamos a envolver en un DIV para modificarlo despues-->
+            <div class="elemento">
+                <label for="usuario">NOMBRE DEL PRODUCTO</label>
+                <input type="text" id="usuario" name="usuario" required="true" placeholder="Nombre del Producto"/>
+            </div>
+
+            <div class="colorcitos">
+                <label>GENERO:</label> <br>
+                <!--Al ser un radio button se envia el valor de femenino-->
+                <input type="radio" id="femenino" name="genero" value="femenino"
+                required="true"/>
+                <label for="femenino">Femenino</label>
+
+                <input type="radio" id="masculino" name="genero" value="masculino"
+                required="true"/>
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="infantil" name="genero" value="infantil"
+                required="true"/>
+                <label for="infanitl">Infantil</label>
+            </div>
+
+            <div class="colorcitos">
+                <label>CATEGORIA:</label> <br>
+                <!--Al ser un radio button se envia el valor de femenino-->
+                <input type="radio" id="formal" name="categoria" value="formal"
+                required="true"/>
+                <label for="formal">Formal</label>
+                <input type="radio" id="masculino" name="categoria" value="formal"
+                required="true"/>
+                <label for="informal">Informal</label>
+            </div>
+
+            <div class="colorcitos">
+            <label for="tamano">TAMANO DEL CALZADO</label> <br>
+            <select id="tamano" name="tamano"> 
+                <option value="0">38</option>
+                <option value="1">39</option> 
+                <option value="2">40</option> 
+                <option value="3" selected="ture">41</option>  
+                <option value="2">42</option>
+                <option value="2">43</option>
+                <option value="2">44</option>
+            </select> <br>
+            </div>
+
+            <div class="elemento">
+                <input type="file" value="Insertar Fotografia"/>
+            </div>
+            
+            <div class="elemento">
+                <input type="submit" value="Enviar"/>
+            </div>
+
+            <div class="elemento">
+                <input type="reset" value="Reestablecer"/>
+            </div>
+        </form>
+    </div>
+
+    <footer class="colorcitos">
+        <h2> MISION-TIC 2022 - GRUPO DE TRABAJO 5 - E-COMMERCE ZAPATERIA</h2>
+    </footer>
+</body>
+</html>

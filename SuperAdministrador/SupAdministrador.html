@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de LOG IN</title>
+    <link href="/SuperAdministrador/css/estilos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!--<para agregar el cabecero de nuestra pagina-->
+        <h1>Super-Administrador, ingreso de nuevos vendedores</h1>
+    </header>
+
+    <nav>
+        <a href="#">HOMEPAGE</a>
+        <a href="#">CARRITO DE COMPRAS</a>
+        <a href="#">LISTA DE DESEOS</a>
+        <a href="#">ADMINISTRADOR</a>
+        <a href="#">SUPER ADMINISTRADOR</a>
+        <a href="#">BUSCAR</a>
+    </nav>
+
+    <div class="contenedor"> 
+        <h2>REGISTRO NUEVO VENDEDOR</h2>
+        <form id="forma" name="forma" method="post">
+        <!--Cada campo lo vamos a envolver en un DIV para modificarlo despues-->
+        <div class="elemento">
+            <label for="usuario">USUARIO</label>
+            <input type="text" id="usuario" name="usuario" required="true"/>
+        </div>
+
+        <div class="elemento">
+            <label for="usuario">NOMBRE Y APELLIDOS</label>
+            <input type="text" id="nombre" name="nombre" required="true"/>
+        </div>
+
+        <div class="elemento">
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" name="email" required="true"/>
+        </div>
+        
+        <div class="elemento">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required="true"/>
+        </div>
+            
+        <div class="elemento">
+            <input type="submit" value="Enviar"/>
+        </div>
+
+        <div class="elemento">
+            <input type="reset" value="Reestablecer"/>
+        </div>
+        </form>
+    </div>
+
+    <footer class="colorcitos">
+        <h2> MISION-TIC 2022 - GRUPO DE TRABAJO 5 - E-COMMERCE ZAPATERIA</h2>
+    </footer>
+</body>
+</html>
