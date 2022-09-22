@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="./CartWishStyle.css">
+</head>
+
+<body>
+    <section class="Container">        
+        <h1 class="title">Shopping Cart</h1>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th class="Price">Price</th>
+                <th class="Quantity">Quantity</th>
+                <th class="Subtotal">Subtotal</th>
+            </tr>
+            <tr class="item">
+                <td>
+                    <img class="Formato_imagenes" src="./PICTURES/Zapatos/ZMGris.jpg" alt="Gray casual shoes for women" >
+                    <br>
+                    <label><input type="checkbox" class="Select">Gray casual shoes for women</label>
+                </td>
+                <td>
+                    <p>80000</p>
+                </td>
+                <td>
+                    <input class="Quantity" type="number" min="1" max="20" placeholder="Select a quantity" style="min-width:150px">
+                </td>
+                <td>
+                    <p>80000</p>
+                    <button class="button" style="vertical-align:middle"><span>Remove</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="Checkout" colspan="4">
+                    <p class="Total">Subtotal 80000</p>
+                    <button class="button2" style="min-width:210px ;" ><span>Proceed to checkout</span>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+
+</html>

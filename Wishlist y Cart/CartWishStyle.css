@@ -1,0 +1,177 @@
+/* Definicion de clases propias */
+
+.Container {
+    Color: white;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.item {
+    background-color: white;
+    color: black;
+    min-width: 150px;
+    width: 50%;
+}
+
+.Checkout {
+    background: rgb(147, 151, 155);
+    text-align: right;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-height: 7%;
+    margin: 5px;
+}
+
+.Formato_imagenes {
+    min-width: 50px;
+    min-height: 50px;
+    width: 20%;
+    height: 20%;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: min-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-left: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.button2 {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: min-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button2 span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button2:hover span {
+    padding-right: 25px;
+}
+
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.Quantity {
+    min-width: 50px;
+    width: 15%;
+    min-height: 25px;
+}
+
+.Subtotal {
+    min-width: 130px;
+    width: 20%;
+}
+
+.Price {
+    min-width: 75px;
+    width: 10%;
+}
+
+.Total {
+    font-size: 27px;
+    color: black;
+    font-style: italic;
+}
+
+
+/* Redefinicion de tags */
+
+table {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+th {
+    font-size: 25px;
+    background-color: rgb(147, 151, 155);
+}
+
+td {
+    font-size: 20px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: silver;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* Definicion de elementos */
+
+#H_header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
